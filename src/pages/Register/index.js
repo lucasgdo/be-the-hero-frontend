@@ -19,21 +19,21 @@ export default function Register() {
     async function handleRegister(e) {
         e.preventDefault();
 
-        const data = {
-            name,
-            email,
-            whatsapp,
-            city,
-            uf
-        };
+        // const data = {
+        //     name,
+        //     email,
+        //     whatsapp,
+        //     city,
+        //     uf
+        // };
 
-        try {
-            const response = await api.post('ongs', data);
-            alert(`Seu ID de acesso: ${response.data.id}`);
-            history.push('/');
-        } catch (err) {
-            alert('Erro no cadastro, tente novamente.')
-        }
+        // try {
+        //     const response = await api.post('ongs', data);
+        //     alert(`Seu ID de acesso: ${response.data.id}`);
+        //     history.push('/');
+        // } catch (err) {
+        //     alert('Erro no cadastro, tente novamente.')
+        // }
     }
 
     return (
@@ -82,7 +82,7 @@ export default function Register() {
                         />
                     </div>
 
-                    <button className="button" type="submit">Cadastrar</button>
+                    <button className="button" type="submit">Por enquanto não dá</button>
                 </form>
             </div>
         </div>

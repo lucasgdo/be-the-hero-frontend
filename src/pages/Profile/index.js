@@ -26,17 +26,17 @@ export default function Profile() {
     }, [ongId]);
 
     async function handleDeleteIncident(id) {
-        try {
-            await api.delete(`incidents/${id}`, {
-                headers: {
-                    Authorization: ongId
-                }
-            });
+        // try {
+        //     await api.delete(`incidents/${id}`, {
+        //         headers: {
+        //             Authorization: ongId
+        //         }
+        //     });
 
-            setIncidents(incidents.filter(incident => incident.id !== id))
-        } catch (err) {
-            alert('Erro ao deletar caso, tente novamente.')
-        }
+        //     setIncidents(incidents.filter(incident => incident.id !== id))
+        // } catch (err) {
+        //     alert('Erro ao deletar caso, tente novamente.')
+        // }
     }
 
     function handleLogout() {
