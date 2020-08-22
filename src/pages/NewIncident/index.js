@@ -19,23 +19,23 @@ export default function NewIncident() {
     async function handleNewIncident(e) {
         e.preventDefault();
 
-        const data = {
-            title,
-            description,
-            value
-        };
+        // const data = {
+        //     title,
+        //     description,
+        //     value
+        // };
         
-        try {
-            await api.post('incidents', data, {
-                headers: {
-                    Authorization: ongId
-                }
-            })
+        // try {
+        //     await api.post('incidents', data, {
+        //         headers: {
+        //             Authorization: ongId
+        //         }
+        //     })
 
-            history.push('/profile');
-        } catch (err) {
-            alert('Erro ao cadastrar caso, tente novamente.')
-        }
+        //     history.push('/profile');
+        // } catch (err) {
+        //     alert('Erro ao cadastrar caso, tente novamente.')
+        // }
     }
 
     return (
@@ -68,7 +68,7 @@ export default function NewIncident() {
                     onChange={e => setValue(e.target.value)}
                 />
 
-                <button className="button" type="submit">Cadastrar</button>
+                <button className="button" type="submit">Por enquanto não dá</button>
             </form>
         </div>
     </div>
